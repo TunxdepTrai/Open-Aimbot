@@ -1634,7 +1634,7 @@ do
         if DEBUG then
             Window:Dialog({
                 Title = "Warning",
-                Content = "Running in Debugging Mode. Some Features may not work properly.",
+                Content = "Chạy ở chế độ gỡ lỗi. Một số tính năng có thể không hoạt động bình thường.",
                 Buttons = {
                     {
                         Title = "Confirm"
@@ -1644,7 +1644,7 @@ do
         elseif ShowWarning then
             Window:Dialog({
                 Title = "Warning",
-                Content = string.format("Your Software does not support all the Features of %s 🔥FREE🔥!", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+                Content = string.format("Nguoi Tao ra Ban Hack Nay Bi dep trai!", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
                 Buttons = {
                     {
                         Title = "Confirm"
