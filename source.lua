@@ -203,8 +203,8 @@ local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 local IsComputer = UserInputService.KeyboardEnabled and UserInputService.MouseEnabled
 
-local MonthlyLabels = { "🎅%s❄️", "☃️%s🏂", "🌷%s☘️", "🌺%s🎀", "🐝%s🌼", "🌈%s😎", "🌞%s🏖️", "☀️%s💐", "🌦%s🍁", "🎃%s💀", "🍂%s☕", "🎄%s🎁" }
-local PremiumLabels = { "💫PREMIUM💫", "✨PREMIUM✨", "🌟PREMIUM🌟", "⭐PREMIUM⭐", "🤩PREMIUM🤩" }
+local MonthlyLabels = { "☃️%s🏂", "🌷%s☘️", "🌺%s🎀", "🐝%s🌼", "🌈%s😎", "🌞%s🏖️", "☀️%s💐", "🌦%s🍁", "🎃%s💀", "🍂%s☕", "🎄%s🎁" }
+local PremiumLabels = { "PREMIUM", "✨PREMIUM✨", "🌟PREMIUM🌟", "⭐PREMIUM⭐", "🤩PREMIUM🤩" }
 
 
 --! Names Handler
@@ -278,8 +278,8 @@ end)
 
 do
     local Window = Fluent:CreateWindow({
-        Title = string.format("%s <b><i>%s</i></b>", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot"), #Status > 0 and Status or "🔥FREE🔥"),
-        SubTitle = "By @ttwiz_z",
+        Title = string.format("%s <b><i>%s</i></b>", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot"), #Status > 0 and Status or "🔥VIP🔥"),
+        SubTitle = "By Tunx",
         TabWidth = UISettings.TabWidth,
         Size = UDim2.fromOffset(table.unpack(UISettings.Size)),
         Theme = UISettings.Theme,
@@ -539,8 +539,8 @@ do
     Tabs.Bots = Window:AddTab({ Title = "Bots", Icon = "bot" })
 
     Tabs.Bots:AddParagraph({
-        Title = string.format("%s 🔥FREE🔥", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
-        Content = "✨Universal Aim Assist Framework✨\nhttps://github.com/ttwizz/Open-Aimbot"
+        Title = string.format("VIP", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+        Content = "contact : discord.gg/hackviet"
     })
 
     local SpinBotSection = Tabs.Bots:AddSection("SpinBot")
@@ -1046,16 +1046,16 @@ do
     end)
 
     PremiumChecksSection:AddParagraph({
-        Title = string.format("%s 💫PREMIUM💫", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
-        Content = "✨Upgrade to unlock all Options✨\nContact @ttwiz_z via Discord to buy"
+        Title = string.format("PREMIUM", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+        Content = "TunxDeptrai"
     })
 
     if DEBUG or getfenv().Drawing and getfenv().Drawing.new then
         Tabs.Visuals = Window:AddTab({ Title = "Visuals", Icon = "box" })
 
         Tabs.Visuals:AddParagraph({
-            Title = string.format("%s 🔥FREE🔥", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
-            Content = "✨Universal Aim Assist Framework✨\nhttps://github.com/ttwizz/Open-Aimbot"
+            Title = string.format("FREE", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+            Content = "Tunxdeptrai"
         })
 
         local FoVSection = Tabs.Visuals:AddSection("FoV")
@@ -1296,8 +1296,8 @@ do
     Tabs.Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 
     Tabs.Settings:AddParagraph({
-        Title = string.format("%s 🔥FREE🔥", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
-        Content = "✨Universal Aim Assist Framework✨\nhttps://github.com/ttwizz/Open-Aimbot"
+        Title = string.format("FREE", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+        Content = "Tunxdeptrai"
     })
 
     local UISection = Tabs.Settings:AddSection("UI")
@@ -1589,7 +1589,7 @@ do
             Title = "Copy Invite Link",
             Description = "Paste it into the Browser Tab",
             Callback = function()
-                getfenv().setclipboard("https://twix.cyou/pix")
+                getfenv().setclipboard("discord.gg/hackviet")
                 Window:Dialog({
                     Title = string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot"),
                     Content = "Invite Link has been copied to the Clipboard!",
@@ -1606,7 +1606,7 @@ do
             Title = "Copy Wiki Link",
             Description = "Paste it into the Browser Tab",
             Callback = function()
-                getfenv().setclipboard("https://moderka.org/Open-Aimbot")
+                getfenv().setclipboard("discord.gg/hackviet")
                 Window:Dialog({
                     Title = string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot"),
                     Content = "Wiki Link has been copied to the Clipboard!",
@@ -1620,7 +1620,7 @@ do
         })
     else
         DiscordWikiSection:AddParagraph({
-            Title = "https://twix.cyou/pix",
+            Title = "discord.gg/hackviet",
             Content = "Paste it into the Browser Tab"
         })
 
@@ -1671,15 +1671,15 @@ end
 local function Notify(Message)
     if Fluent and typeof(Message) == "string" then
         Fluent:Notify({
-            Title = string.format("%s 🔥FREE🔥", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+            Title = string.format("FREE", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
             Content = Message,
-            SubContent = "By @ttwiz_z",
+            SubContent = "By @Tunx",
             Duration = 1.5
         })
     end
 end
 
-Notify("✨Upgrade to unlock all Options✨")
+Notify("✨Mo Khoa all✨")
 
 
 --! Fields Handler
