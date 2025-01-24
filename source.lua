@@ -292,8 +292,8 @@ do
     Window:SelectTab(1)
 
     Tabs.Aimbot:AddParagraph({
-        Title = string.format("%s 🔥FREE🔥", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
-        Content = "✨Universal Aim Assist Framework✨\nhttps://github.com/ttwizz/Open-Aimbot"
+        Title = string.format("Aimbot/tunx", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+        Content = " contact : Discord.gg/hackviet "
     })
 
     local AimbotSection = Tabs.Aimbot:AddSection("Aimbot")
@@ -539,7 +539,7 @@ do
     Tabs.Bots = Window:AddTab({ Title = "Bots", Icon = "bot" })
 
     Tabs.Bots:AddParagraph({
-        Title = string.format("VIP", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+        Title = string.format("Bot/Tunx", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
         Content = "contact : discord.gg/hackviet"
     })
 
@@ -697,8 +697,8 @@ do
     Tabs.Checks = Window:AddTab({ Title = "Checks", Icon = "list-checks" })
 
     Tabs.Checks:AddParagraph({
-        Title = string.format("%s 🔥FREE🔥", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
-        Content = "✨Universal Aim Assist Framework✨\nhttps://github.com/ttwizz/Open-Aimbot"
+        Title = string.format("Checks/Tunx", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+        Content = "contact : Discord.gg/hackviet"
     })
 
     local SimpleChecksSection = Tabs.Checks:AddSection("Simple Checks")
@@ -1054,8 +1054,8 @@ do
         Tabs.Visuals = Window:AddTab({ Title = "Visuals", Icon = "box" })
 
         Tabs.Visuals:AddParagraph({
-            Title = string.format("FREE", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
-            Content = "Tunxdeptrai"
+            Title = string.format("Visuals/Tunx", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+            Content = "contact : Discord.gg/hackviet "
         })
 
         local FoVSection = Tabs.Visuals:AddSection("FoV")
@@ -1296,8 +1296,8 @@ do
     Tabs.Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 
     Tabs.Settings:AddParagraph({
-        Title = string.format("FREE", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
-        Content = "Tunxdeptrai"
+        Title = string.format("Settings/Tunx", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+        Content = "contact : Discord.gg/hackviet "
     })
 
     local UISection = Tabs.Settings:AddSection("UI")
@@ -1625,7 +1625,7 @@ do
         })
 
         DiscordWikiSection:AddParagraph({
-            Title = "https://moderka.org/Open-Aimbot",
+            Title = "discord.gg/hackviet",
             Content = "Paste it into the Browser Tab"
         })
     end
@@ -1654,7 +1654,7 @@ do
         else
             Window:Dialog({
                 Title = string.format("%s 💫PREMIUM💫", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
-                Content = "✨Upgrade to unlock all Options✨ – Contact @ttwiz_z via Discord to buy",
+                Content = "contact : Discord.gg/hackviet ",
                 Buttons = {
                     {
                         Title = "Confirm"
@@ -1671,7 +1671,7 @@ end
 local function Notify(Message)
     if Fluent and typeof(Message) == "string" then
         Fluent:Notify({
-            Title = string.format("FREE", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+            Title = string.format("Tunxdeptrai", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
             Content = Message,
             SubContent = "By @Tunx",
             Duration = 1.5
